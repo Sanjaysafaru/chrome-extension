@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height:fit-content; */
+}
+ul{
+    list-style-type: none;
+}
+.popup{
+    width: 300px;
+}
+.popup .picker{
+    background-color: #7B8FA1;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.picker #color-picker{
+    outline: none;
+    border: 1px solid #FFD495;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 800;
+    background-color: #FDA769;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+.picker #color-picker:active{
+    transform: scale(0.95);
+    background-color: #EF9A53;
+    border-color:#FDA769 ;
+}
+.picked-colors{
+    margin: 10px 15px;
+}
+.picked-colors.hide{
+    display: none;
+}
+.picked-colors header{
+    display: flex;
+    justify-content: space-between;
+
+}
+.picked-colors .clear-all{
+    color: #567189;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border: 1px solid #EEEEEE;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+.all-colors{
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.all-colors .color{
+    display:flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: calc(100%/2);
+}
+.all-colors .color .rect{
+    display: flex;
+    height: 20px;
+    width: 20px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.all-colors .color .value{
+    font-size: 0.9rem;
+    font-weight:500;
+    text-transform: uppercase;
+
+}
